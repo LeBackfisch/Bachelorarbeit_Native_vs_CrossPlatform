@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"            
+             x:Class="Xamarin.Forms_BAC.Views.EditPicturePage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Take Picture"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" Clicked="TakePicture" x:Name="TakePictureButton">
+            </Button>
+            <Button Text="Edit Picture"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" Clicked="EditPicture" x:Name="EditPictureButton">
+            </Button>
+            <Button Text="Save Picture"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" Clicked="SavePicture" x:Name="SavePictureButton">
+            </Button>
+            <Image Source="{Binding Picture}" VerticalOptions="Center" HorizontalOptions="Center" x:Name="TakenPicture">
+            </Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

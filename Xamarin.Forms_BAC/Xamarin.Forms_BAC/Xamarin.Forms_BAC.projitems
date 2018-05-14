@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{11CC89E0-1723-4069-A803-B4B3633B2824}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Xamarin.Forms_BAC</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\PrimeService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\StarshipService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\DataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IPicture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BackgroundThreadViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\EditPictureViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\StarshipViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\BackgroundThreadPage.xaml.cs">
+      <DependentUpon>BackgroundThreadPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditPicturePage.xaml.cs">
+      <DependentUpon>EditPicturePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\StarshipModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\StarshipPage.xaml.cs">
+      <DependentUpon>StarshipPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\StarshipPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\EditPicturePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\BackgroundThreadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

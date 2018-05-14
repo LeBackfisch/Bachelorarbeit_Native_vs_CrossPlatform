@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="at.technikum_wien.if15b049.androidbac.Views.HomeActivity"
+    android:orientation="vertical">
+
+    <Button android:id="@+id/change_starship"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="navigateStarship"
+        android:text="@string/navigate_to_starship" />
+
+    <Button android:id="@+id/change_edit_picture"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="navigateEditPicture"
+        android:text="@string/navigate_to_edit_picture" />
+
+    <Button android:id="@+id/change_background_thread"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:onClick="navigateBackgroundThread"
+        android:text="@string/navigate_to_background_thread" />
+
+</LinearLayout>

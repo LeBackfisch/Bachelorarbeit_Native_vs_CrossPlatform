@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AndroidBAC</string>
+    <string name="title_activity_starship">StarshipActivity</string>
+    <string name="starship_title">Get Starships</string>
+    <string name="navigate_to_starship">Starship List</string>
+    <string name="navigate_to_Picture_Editor">Picture Editor</string>
+    <string name="navigate_to_background_thread">Backgroundthread Test</string>
+    <string name="title_activity_edit_picture">EditPictureActivity</string>
+    <string name="navigate_to_edit_picture">Picture Editor</string>
+    <string name="get_picture_title">Get Picture</string>
+    <string name="edit_picture_title">Edit Picture</string>
+    <string name="save_picture_title">Save Picture</string>
+    <string name="title_activity_background_thread">BackgroundThreadActivity</string>
+    <string name="start_thread_button">Start Thread</string>
+</resources>

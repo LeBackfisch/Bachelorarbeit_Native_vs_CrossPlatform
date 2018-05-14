@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.Xamarin.Forms_BAC" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="5" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-feature android:name="android.hardware.camera" android:required="false" />
+  <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+  <application android:label="Xamarin.Forms_BAC.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon">
+    <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.companyname.Xamarin.Forms_BAC.fileprovider" android:exported="false" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"></meta-data>
+    </provider>
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/icon" android:label="Xamarin.Forms_BAC" android:theme="@style/MainTheme" android:name="md5630b258c4e09ec17e41488335fe95ed8.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="orientation|screenSize" android:name="md58012868b9db0f77fe9dea854cba28f39.MediaPickerActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.Xamarin.Forms_BAC.mono.MonoRuntimeProvider.__mono_init__" />
+    <meta-data android:name="android.support.VERSION" android:value="25.4.0" />
+  </application>
+</manifest>
